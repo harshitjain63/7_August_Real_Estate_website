@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function showAlert(event) {
+            event.preventDefault();
+            let forms = document.getElementById("Contactus");
+            if(forms.checkValidity()){
+                alert ("Form Submitted Successfully");
+            }
+          
+        }
+        </script>
+</head>
+
+<body>
+    <header>
+        <h1>DLF Company</h1>
+        <nav>
+            <a href="#about">About Us</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+    </header>
+
+    <img src="house.jpg" width="100%">
+
+
+    <section id="about" class="section">
+        <h1>About Us</h1>
+        <h2 class="h2">At DLF, we take pride in our uncompromising integrity in customer engagement and quality
+            assurance, and throughout our 75-year legacy, we have made it our core mission to provide real-estate
+            development, management, and investment services of the highest calibre.</h2>
+        <div class="border"></div>
+        <p>Founded in 1946 by Chaudhary Raghvendra Singh, DLF started with the creation of 22 urban colonies in Delhi.
+            In 1985, the company expanded into the then-unknown region of Gurugram, creating exceptional living and
+            working spaces for the new Indian global professionals. Today, DLF is the largest publicly listed real
+            estate company in India, with residential, commercial, and retail properties in 15 states and 24 cities.</p>
+        <p>Our diverse verticals reflect our dedication to developing ecosystems for India’s changing needs. But our
+            foundation has always been our employees, our customers, our stakeholders, and our shareholders. We invest
+            in spearheading innovation through empowerment and optimism, in order to build the foundation of India’s
+            future on the legacy of our past.</p>
+    </section>
+
+    <div class="container">
+        <img src="Award-Banner.jpg" alt="Snow" style="width:100%;">
+        <h1>World-class hospitality recognised around the world</h1>
+        <p>In what has now become a tradition, we garner the most coveted international awards for our offerings every
+            year. From awe-inspiring service and dining to rejuvenating leisure and wellness, our hospitality impresses
+            connoisseurs and critics alike.</p>
+            <button class="button">view All Awards</button>
+    </div>
+
+    <section id="services" class="section">
+        <h1>Our Services</h1>
+        <h2>DLF has been delivering world-class hospitality for more than two decades. We strive to anticipate the needs
+            of our customers with attention to detail, distinctive services, warmth, and concern because, at DLF, you’re
+            always home.</h2>
+        <div class="border"></div>
+        <p>Starting with the iconic DLF Golf and Country Club, integrated community clubs with residential
+            neighbourhoods to The Lodhi, the landmark hotel in the national capital, we have kept customer delight at
+            the forefront.</p>
+    </section>
+
+
+    <section id="contact" class="section">
+        <h1>Contact Us</h1>
+        <form id="Contactus">
+            <label for="name">Name:</label>
+            <input type="text"  name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email"  name="email" required><br><br>
+            <label for="message">Message:</label><br>
+            <textarea name="message" rows="4" cols="50" required></textarea><br><br>
+            <button type="submit" class="button" onclick="showAlert(event)">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 DLF Company. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
