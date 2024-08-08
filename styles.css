@@ -66,3 +66,11 @@ nav a {
     display: block; 
 }
 
+@media screen and (max-width:460px){
+    
+.textarea{
+    width: 70%;
+}
+
+} 
+
